@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Lesson 6</title>
+	</head>
+	<body>
+		<header>
+			<div class="header__wrapper container">
+				<div class="header__left-side">
+					<a class="header__logo" href="./index.html"><img src="./img/logo.svg" alt="Логотип сайта" /></a>
+					<button class="header__search">
+						<svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" fill="none">
+							<path
+								fill="#E8E8E8"
+								d="M19.06 17.626A10.395 10.395 0 1 0 11.42 21c2.253.003 4.444-.731 6.24-2.09l7.749 7.807a.925.925 0 0 0 .66.285.9.9 0 0 0 .66-.285.971.971 0 0 0 0-1.346l-7.67-7.746ZM2.887 10.5a8.535 8.535 0 1 1 8.534 8.6 8.575 8.575 0 0 1-8.534-8.6Z"
+							/>
+						</svg>
+					</button>
+				</div>
+
+				<div class="header__right-side">
+					<button class="header__burger">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="23" fill="#E8E8E8">
+							<path d="M0 23v-2.69h32V23H0Zm0-10.24v-2.69h32v2.69H0ZM0 2.69V0h32v2.69H0Z" />
+						</svg>
+					</button>
+					<button class="header__account">
+						<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="#E8E8E8">
+							<path
+								d="M14.5 19.937c4.5 0 8.156-4.473 8.156-9.969C22.656 4.472 19 0 14.5 0a7.45 7.45 0 0 0-5.834 3 11.159 11.159 0 0 0-2.322 6.974c0 5.491 3.656 9.963 8.156 9.963Zm0-18.124c3.5 0 6.344 3.659 6.344 8.156 0 4.497-2.846 8.156-6.344 8.156s-6.344-3.66-6.345-8.156C8.154 5.473 11 1.813 14.5 1.813Zm6.344 16.312a.907.907 0 0 0 0 1.813 6.351 6.351 0 0 1 6.344 6.344.908.908 0 0 1-.906.906H2.72a.908.908 0 0 1-.906-.906 6.352 6.352 0 0 1 6.344-6.344.906.906 0 0 0 0-1.812A8.165 8.165 0 0 0 0 26.281 2.722 2.722 0 0 0 2.719 29h23.563A2.722 2.722 0 0 0 29 26.281a8.166 8.166 0 0 0-8.156-8.156Z"
+							/>
+						</svg>
+					</button>
+					<button class="header__cart">
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="29" fill="#E8E8E8">
+							<path
+								d="M26.2 29a2.477 2.477 0 1 1 .201 0h-.2ZM6.754 26.32a2.68 2.68 0 1 1 5.364 0 2.68 2.68 0 0 1-5.366 0h.002Zm3.8-5.634a1.184 1.184 0 0 1-1.145-.867L4.575 2.364H1.182a1.182 1.182 0 0 1 0-2.364h4.281a1.183 1.183 0 0 1 1.144.868l4.833 17.455h13.178L29 8.275h-14.6a1.183 1.183 0 1 1 0-2.365h16.413a1.178 1.178 0 0 1 .986.533 1.191 1.191 0 0 1 .1 1.122l-5.405 12.412a1.185 1.185 0 0 1-1.084.709H10.553Z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="banner">
+				<div class="banner__wrapper">
+					<img src="./img/man.png" alt="banner" />
+					<div class="banner__text">
+						<div class="block-vert-line">
+							<h1>THE BRAND</h1>
+							<h2>OF LUXERIOUS <span class="fashion">FASHION</span></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="category-list">
+				<div class="category-list__wrapper container">
+					<div class="category" style="background-image: url('./img/category-women.png')">
+						<div class="category_blackout">
+							<h3>30% OFF</h3>
+							<h4>FOR WOMEN</h4>
+						</div>
+					</div>
+					<div class="category" style="background-image: url('./img/category-man.png')">
+						<div class="category_blackout">
+							<h3>HOT DEAL</h3>
+							<h4>FOR MEN</h4>
+						</div>
+					</div>
+					<div class="category" style="background-image: url('./img/category-child.png')">
+						<div class="category_blackout">
+							<h3>NEW ARRIVALS</h3>
+							<h4>FOR KIDS</h4>
+						</div>
+					</div>
+					<div class="category-accs" style="background-image: url('./img/category-accs.png')">
+						<div class="category_blackout">
+							<h3>LUXIROUS & TRENDY</h3>
+							<h4>ACCESORIES</h4>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="list-items">
+				<h2 class="list-items__title">Fetured Items</h2>
+				<p class="list-items__description">Shop for items based on what we featured in this week</p>
+				<div class="list-items__wrapper container container-items">
+					<script src="script.js" type="module"></script>
+				</div>
+				<div class="list-items__btn">
+					<button class="list-items__btn">Browse All Product</button>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

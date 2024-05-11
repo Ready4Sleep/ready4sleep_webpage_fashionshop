@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	scroll-behavior: smooth;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #000;
+	padding: 19px 0;
+}
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__left-side {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.header__right-side {
+	position: relative;
+	display: flex;
+	gap: 30px;
+}
+
+.header__search:hover svg,
+.header__burger:hover svg,
+.header__account:hover svg,
+.header__cart:hover svg {
+	fill: brown;
+}
+
+.header__counter {
+	width: 20px;
+	height: 20px;
+	background-color: rgba(241, 109, 127, 1);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 12px;
+	line-height: 14.4px;
+	position: absolute;
+	top: -5px;
+	right: -9px;
+}
+
+.banner {
+	background-color: #f1e4e6;
+	margin-bottom: 65px;
+}
+
+.banner__wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 60px;
+}
+
+.block-vert-line {
+	border-left: 12px solid rgba(241, 109, 127, 1);
+	padding-left: 16px;
+}
+
+.fashion {
+	color: rgba(241, 109, 127, 1);
+}
+
+.banner__text h1 {
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 57.6px;
+}
+
+.banner__text h2 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38.4px;
+}
+
+
+.category-list {
+	margin-bottom: 96px;
+}
+
+.category-list__wrapper {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.category {
+	width: 360px;
+	height: 260px;
+}
+
+.category-accs {
+	width: 1140px;
+	height: 180px;
+}
+
+.category_blackout {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	background-color: rgba(33, 22, 22, 0.7);
+	width: 100%;
+	height: 100%;
+}
+
+.category_blackout h3 {
+	color: #fff;
+	font-size: 16px;
+	line-height: 19.2px;
+}
+
+.category_blackout h4 {
+	line-height: 28.8px;
+	color: rgba(241, 109, 127, 1);
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.list-items {
+	margin-bottom: 95px;
+}
+
+.list-items__title {
+	text-align: center;
+	font-size: 30px;
+	line-height: 36px;
+	margin-bottom: 6px;
+}
+
+.list-items__description {
+	text-align: center;
+	color: #9f9f9f;
+	font-size: 14px;
+	line-height: 16.8px;
+	margin-bottom: 48px;
+}
+
+.list-items__wrapper {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+	margin-bottom: 48px;
+}
+
+.list-items__item {
+	background-color: #f8f8f8;
+	max-width: 360px;
+	max-height: 581px;
+}
+
+.item__img {
+	width: 360px;
+	height: 420px;
+}
+
+.item__description {
+	padding: 25px 30px 20px 16px;
+}
+
+.item__description h3 {
+	font-size: 13px;
+	line-height: 15.6px;
+	margin-bottom: 13px;
+}
+
+.item__description p {
+	color: rgba(93, 93, 93, 1);
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 16.8px;
+	margin-bottom: 18px;
+}
+
+.item__description span {
+	color: rgba(241, 109, 127, 1);
+	font-size: 16px;
+	line-height: 19.2px;
+}
+
+.item__img_blackout {
+	display: flex;
+	opacity: 0;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(58, 56, 56, 0.86);
+}
+
+.item__img_blackout button {
+	border: 1px solid #fff;
+	padding: 10px 17px 10px 13px;
+	background-color: transparent;
+	color: #fff;
+	font-size: 14px;
+	line-height: 16.8px;
+
+	display: flex;
+	align-items: center;
+	gap: 11px;
+}
+
+.item__img_blackout button::before {
+	content: url('./img/cartBtn.svg');
+}
+
+.item__img:hover .item__img_blackout {
+	opacity: 100;
+	transition: all 0.5s ease-in-out;
+}
+
+.list-items__btn {
+	display: flex;
+	justify-content: center;
+}
+
+.list-items__btn button {
+	color: #f16d7f;
+	background-color: transparent;
+	padding: 15px 40px;
+	font-size: 16px;
+	line-height: 19.2px;
+	border: 1px solid #ff6a6a;
+	transition: all 0.3s ease-in-out;
+}
+
+.list-items__btn button:hover {
+	background-color: #ff6a6a;
+	color: #fff;
+}
